@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#f6f1e7;color:#1d2b33;font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#0b5fa5;text-decoration:none}
+a:hover{color:#c2683f}
+*{box-sizing:border-box}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+<header style="position:sticky;top:0;z-index:20;background:rgba(246,241,231,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e3d9c6">
+  <div style="max-width:1200px;margin:0 auto;padding:14px clamp(16px,4vw,24px);display:flex;align-items:center;justify-content:space-between;column-gap:16px;row-gap:8px;flex-wrap:wrap">
+    <a href="#top" style="font-family:'Young Serif',serif;font-size:20px;color:#1d2b33;letter-spacing:-.01em">Apartmani Kostić</a>
+    <nav style="display:flex;gap:clamp(16px,3vw,24px);align-items:center;font-size:15px;flex-wrap:wrap">
+      <a href="#apartmani" style="color:#1d2b33">Apartmani</a>
+      <a href="#oprema" style="color:#1d2b33">Oprema</a>
+      <a href="#galerija" style="color:#1d2b33">Galerija</a>
+      <a href="#lokacija" style="color:#1d2b33">Lokacija</a>
+    </nav>
+  </div>
+</header>
+
+<section id="top" data-screen-label="Hero" style="max-width:1200px;width:100%;margin:0 auto;padding:clamp(28px,6vw,56px) clamp(16px,4vw,24px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(28px,5vw,48px);align-items:end">
+  <div style="display:flex;flex-direction:column;gap:28px;padding-bottom:12px">
+    <div style="font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#c2683f;font-weight:600">Čanj · Crna Gora</div>
+    <h1 style="font-family:'Young Serif',serif;font-weight:400;font-size:clamp(44px,6.4vw,84px);line-height:1;letter-spacing:-.025em;margin:0;text-wrap:balance">Vaš mirni kutak pored mora</h1>
+    <p style="font-size:19px;line-height:1.55;margin:0;max-width:30em;color:#3f4c52;text-wrap:pretty">Dva identična, potpuno opremljena apartmana za vaš odmor na crnogorskom primorju. Odvojena spavaća soba, dnevni boravak sa kuhinjom i terasa. Sve što vam treba za opušten boravak.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="tel:+381641251827" style="background:#c2683f;color:#fff;padding:16px 26px;border-radius:999px;font-weight:600;font-size:16px">Pozovite za rezervaciju</a>
+      <a href="#galerija" style="border:1.5px solid #1d2b33;color:#1d2b33;padding:14.5px 24px;border-radius:999px;font-weight:600;font-size:16px">Pogledajte slike</a>
+    </div>
+  </div>
+  <div style="border-radius:28px 28px 220px 28px;overflow:hidden;aspect-ratio:4/3.6;background:#e3d9c6">
+    <img src="uploads/img/hero.jpg" alt="Ulaz i terasa apartmana" style="width:100%;height:100%;object-fit:cover;display:block">
+  </div>
+</section>
+
+<section id="apartmani" data-screen-label="Apartmani" style="max-width:1200px;width:100%;margin:0 auto;padding:clamp(48px,8vw,72px) clamp(16px,4vw,24px)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(28px,5vw,48px);align-items:center">
+    <div style="border-radius:24px;overflow:hidden;aspect-ratio:4/3;background:#e3d9c6">
+      <img src="uploads/img/apartman-1.jpg" alt="Dnevni boravak sa trpezarijom" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div style="font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#c2683f;font-weight:600">Ponuda</div>
+      <h2 style="font-family:'Young Serif',serif;font-weight:400;font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance">Dva apartmana, isti komfor</h2>
+      <p style="font-size:18px;line-height:1.6;margin:0;color:#3f4c52;text-wrap:pretty">Oba apartmana su identičnog rasporeda i opreme. Svaki ima zasebnu spavaću sobu sa bračnim krevetom, prostran dnevni boravak sa trpezarijom i kuhinjom, kupatilo sa tuš kabinom i natkrivenu terasu.</p>
+      <div style="display:flex;gap:40px;flex-wrap:wrap;padding-top:8px;border-top:1px solid #e3d9c6">
+        <div style="display:flex;flex-direction:column;gap:4px;padding-top:16px">
+          <span style="font-family:'Young Serif',serif;font-size:40px;line-height:1">2</span>
+          <span style="font-size:15px;color:#5b666b">apartmana</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;padding-top:16px">
+          <span style="font-family:'Young Serif',serif;font-size:40px;line-height:1">1</span>
+          <span style="font-size:15px;color:#5b666b">spavaća soba u svakom</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="oprema" data-screen-label="Oprema" style="background:#0b5fa5;color:#f6f1e7">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,9vw,88px) clamp(16px,4vw,24px);display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap">
+      <h2 style="font-family:'Young Serif',serif;font-weight:400;font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.02em;margin:0">Oprema i usluge</h2>
+      <p style="font-size:17px;line-height:1.55;margin:0;max-width:26em;color:#d7e9f8">U svakom apartmanu.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(max(140px,calc((100% - 48px) / 4)),1fr));gap:clamp(10px,2vw,16px)">
+      <sc-for list="{{ amenities }}" as="a" hint-placeholder-count="8">
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:clamp(12px,2vw,18px);padding:clamp(20px,4vw,32px) clamp(12px,2vw,20px);border-radius:20px;background:rgba(246,241,231,.07);border:1px solid rgba(246,241,231,.16)">
+          <div style="width:56px;height:56px;border-radius:999px;background:#f6f1e7;color:#0b5fa5;display:flex;align-items:center;justify-content:center">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ a.d }}"></path></svg>
+          </div>
+          <span style="font-family:'Young Serif',serif;font-size:clamp(17px,2.2vw,21px);line-height:1.2;text-wrap:balance">{{ a.title }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="galerija" data-screen-label="Galerija" style="max-width:1200px;width:100%;margin:0 auto;padding:clamp(56px,9vw,88px) clamp(16px,4vw,24px);display:flex;flex-direction:column;gap:36px">
+  <div style="display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap">
+    <h2 style="font-family:'Young Serif',serif;font-weight:400;font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.02em;margin:0">Galerija</h2>
+    <span style="font-size:15px;color:#5b666b">Kliknite na sliku za uvećanje</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px">
+    <sc-for list="{{ photos }}" as="p" hint-placeholder-count="6">
+      <button onClick="{{ p.open }}" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:10px">
+        <div style="border-radius:18px;overflow:hidden;aspect-ratio:4/3;background:#e3d9c6">
+          <img src="{{ p.src }}" alt="{{ p.label }}" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease" style-hover="transform:scale(1.04)">
+        </div>
+      </button>
+    </sc-for>
+  </div>
+</section>
+
+<section id="lokacija" data-screen-label="Lokacija" style="max-width:1200px;width:100%;margin:0 auto;padding:0 clamp(16px,4vw,24px) clamp(96px,12vw,88px);display:flex;flex-direction:column;gap:36px">
+  <div style="display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap">
+    <h2 style="font-family:'Young Serif',serif;font-weight:400;font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.02em;margin:0">Lokacija</h2>
+    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=42.16514765243382,18.99653219579887" target="_blank" rel="noopener" style="border:1.5px solid #1d2b33;color:#1d2b33;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px">Uputstva za dolazak</a>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:stretch">
+    <div style="flex:2 1 480px;border-radius:24px;overflow:hidden;min-height:clamp(300px,50vw,420px);background:#e3d9c6;min-width:0">
+      <iframe title="Mapa lokacije apartmana" src="https://maps.google.com/maps?q=42.16514765243382,18.99653219579887&amp;z=15&amp;output=embed" style="border:0;width:100%;height:100%;min-height:clamp(300px,50vw,420px);display:block" loading="lazy"></iframe>
+    </div>
+    <div style="flex:1 1 300px;display:flex;flex-direction:column">
+      <div style="font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#c2683f;font-weight:600;padding-bottom:12px">Udaljenosti</div>
+      <sc-for list="{{ distances }}" as="d" hint-placeholder-count="7">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid #e3d9c6">
+          <span style="font-size:17px">{{ d.place }}</span>
+          <span style="font-family:'Young Serif',serif;font-size:20px;color:#0b5fa5;white-space:nowrap">{{ d.km }}</span>
+        </div>
+      </sc-for>
+      <span style="font-size:13px;color:#5b666b;padding-top:14px">Okvirne udaljenosti</span>
+    </div>
+  </div>
+</section>
+
+<footer style="border-top:1px solid #e3d9c6">
+  <div style="max-width:1200px;margin:0 auto;padding:28px clamp(16px,4vw,24px) 96px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:#5b666b">
+    <span>Apartmani Kostić · Čanj, Crna Gora</span>
+    <a href="tel:+381641251827">064 125 1827</a>
+  </div>
+</footer>
+
+<sc-if value="{{ showCallBar }}" hint-placeholder-val="{{ false }}">
+  <a href="tel:+381641251827" style="position:fixed;right:16px;bottom:16px;z-index:30;background:#c2683f;color:#fff;padding:14px 22px;white-space:nowrap;border-radius:999px;font-weight:600;font-size:16px;box-shadow:0 10px 30px rgba(29,43,51,.25)">Rezerviši · 064 125 1827</a>
+</sc-if>
+
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ close }}" style="position:fixed;inset:0;z-index:50;background:rgba(17,27,32,.92);display:flex;align-items:center;justify-content:center;padding:24px">
+    <img src="{{ lbSrc }}" alt="{{ lbLabel }}" style="max-width:100%;max-height:82vh;border-radius:12px;display:block">
+    <button onClick="{{ prev }}" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:999px;border:none;background:#f6f1e7;color:#1d2b33;font-size:22px;cursor:pointer">‹</button>
+    <button onClick="{{ next }}" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:999px;border:none;background:#f6f1e7;color:#1d2b33;font-size:22px;cursor:pointer">›</button>
+    <div style="position:absolute;bottom:24px;left:0;right:0;text-align:center;color:#f6f1e7;font-size:15px">{{ lbLabel }} · {{ lbCount }}</div>
+    <button onClick="{{ close }}" style="position:absolute;top:16px;right:16px;width:48px;height:48px;border-radius:999px;border:none;background:transparent;color:#f6f1e7;font-size:28px;cursor:pointer">×</button>
+  </div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;floatingCall&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { idx: null };
+  photos = [
+    { src: 'uploads/img/apartman-1.jpg', label: 'Dnevni boravak i trpezarija' },
+    { src: 'uploads/img/slika-1.jpg', label: 'Kuhinja' },
+    { src: 'uploads/img/slika-2.jpg', label: 'Dnevni boravak sa TV-om' },
+    { src: 'uploads/img/slika-3.jpg', label: 'Spavaća soba' },
+    { src: 'uploads/img/slika-42.jpg', label: 'Kupatilo' },
+    { src: 'uploads/img/slika-5.jpg', label: 'Terasa' }
+  ];
+  onKey = (e) => {
+    if (this.state.idx === null) return;
+    if (e.key === 'Escape') this.setState({ idx: null });
+    if (e.key === 'ArrowRight') this.step(1);
+    if (e.key === 'ArrowLeft') this.step(-1);
+  };
+  componentDidMount() { window.addEventListener('keydown', this.onKey); }
+  componentWillUnmount() { window.removeEventListener('keydown', this.onKey); }
+  step(d) { const n = this.photos.length; this.setState(s => ({ idx: (s.idx + d + n) % n })); }
+  renderVals() {
+    const amenities = [
+      ['Opremljena kuhinja', 'M2 12h20 M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8 M4 8l16-4 M8.86 6.78l-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8'],
+      ['Odvojena spavaća soba', 'M2 4v16 M2 8h18a2 2 0 0 1 2 2v10 M2 17h20 M6 8v9'],
+      ['Kupatilo', 'M4 4l2.5 2.5 M13.5 6.5a4.95 4.95 0 0 0-7 7 M15 5L4 16 M14 17v.01 M10 16v.01 M13 13v.01 M16 10v.01 M11 20v.01 M17 14v.01 M20 11v.01'],
+      ['Terasa', 'M12 2v2 M12 20v2 M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41 M2 12h2 M20 12h2 M6.34 17.66l-1.41 1.41 M19.07 4.93l-1.41 1.41 M16 12a4 4 0 1 1-8 0a4 4 0 1 1 8 0'],
+      ['TV', 'M4 7h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z M17 2l-5 5-5-5'],
+      ['Klima', 'M2 12h20 M12 2v20 M20 16l-4-4 4-4 M4 8l4 4-4 4 M16 4l-4 4-4-4 M8 20l4-4 4 4'],
+      ['Besplatan WiFi', 'M12 20h.01 M2 8.82a15 15 0 0 1 20 0 M5 12.86a10 10 0 0 1 14 0 M8.5 16.43a5 5 0 0 1 7 0'],
+      ['Parking u dvorištu', 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z M9 17V7h4a3 3 0 0 1 0 6H9'],
+    ].map(([title, d]) => ({ title, d }));
+    const idx = this.state.idx;
+    const cur = idx !== null ? this.photos[idx] : null;
+    return {
+      amenities,
+      photos: this.photos.map((p, i) => ({ ...p, open: () => this.setState({ idx: i }) })),
+      lbOpen: idx !== null,
+      lbSrc: cur ? cur.src : '',
+      lbLabel: cur ? cur.label : '',
+      lbCount: cur ? `${idx + 1} / ${this.photos.length}` : '',
+      close: () => this.setState({ idx: null }),
+      prev: (e) => { e.stopPropagation(); this.step(-1); },
+      next: (e) => { e.stopPropagation(); this.step(1); },
+      distances: [
+        ['Plaža Čanj', '≈ 700 m'],
+        ['Kraljičina plaža', '≈ 2 km'],
+        ['Sutomore', '≈ 8 km'],
+        ['Petrovac', '≈ 13 km'],
+        ['Bar', '≈ 15 km'],
+        ['Budva', '≈ 30 km'],
+        ['Aerodrom Podgorica', '≈ 55 km'],
+      ].map(([place, km]) => ({ place, km })),
+      showCallBar: this.props.floatingCall ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
